@@ -22,7 +22,7 @@ AD QH TH 9D 8H TS 6D 3S AS AC
 - HIGH_CARD
 
 ## Requirements
-Update your path file on the Macin.java class that contains of the deck of cards
+Update your path file on the Main.java class that contains of the deck of cards
 ```java
 fileName = D:\dara\encinas-repo\pokar-game\src\com\company\poker.txt
 ```

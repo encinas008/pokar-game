@@ -12,11 +12,7 @@ public class Game {
     private int counterWinsPlayerOne;
     private int counterWinsPlayerTwo;
 
-    private Map<PriorityGame, CheckDeckOfCard> mapPriorityGames = new HashMap();
-
-    private List<PriorityGame> gamesToPlayWithHighCard = Arrays.asList(
-            PriorityGame.REAL_SCALE
-    );
+    private final HashMap<PriorityGame, CheckDeckOfCard> mapPriorityGames = new HashMap<>();
 
     public Game() {
         mapPriorityGames.put(PriorityGame.REAL_SCALE, new RealScale());
@@ -72,13 +68,13 @@ public class Game {
                 }
 
                 if (!cardsPlayerOne.isEmpty() && !cardsPlayerTwo.isEmpty()) {
-                    getWinnerByHighCard(cardsPlayerOne, cardsPlayerTwo, true);
+                    getWinnerByHighCard(cardsPlayerOne, cardsPlayerTwo, Boolean.TRUE);
                     return;
                 }
             }
 
             if (priorityGame == PriorityGame.HIGH_CARD) {
-                getWinnerByHighCard(playerOne.getCards(), playerTwo.getCards(), false);
+                getWinnerByHighCard(playerOne.getCards(), playerTwo.getCards(), Boolean.FALSE);
             }
         }
     }
