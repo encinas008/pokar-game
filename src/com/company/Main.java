@@ -10,7 +10,7 @@ import java.util.stream.Stream;
 public class Main {
 
     public static void main(String[] args) {
-        String fileName = "D:\\dara\\pokar\\src\\com\\company\\poker.txt";
+        String fileName = "D:\\dara\\encinas-repo\\pokar-game\\src\\com\\company\\poker.txt";
         Game game = new Game();
         try {
             List<String> list = readDeckOfCards(fileName);
